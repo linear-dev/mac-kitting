@@ -5,8 +5,6 @@
 #
 # 前提（MDM でプリイン済み）: Homebrew
 # Xcode Command Line Tools は入れない（git は Homebrew 版を使う）
-# MDM 配布のため、ここには含めないもの:
-#   Slack / Microsoft Office / Microsoft Teams / ブラウザ
 
 # ---- tap ----
 tap "linear-dev/tools"            # → https://github.com/linear-dev/homebrew-tools
@@ -19,6 +17,10 @@ brew "linear-dev/tools/tug"       # ポート衝突を避けて複数案件を�
 brew "gh"                         # GitHub CLI（gh auth login → gh auth setup-git）
 brew "lefthook"                   # Git フック
 cask "dominion525/tap/cmd-eikana" # ⌘ 単押しで英数/かな切替
+
+# ---- コミュニケーション・ブラウザ ----
+cask "microsoft-teams"            # インストール時に管理者パスワードが必要
+cask "microsoft-edge"
 
 # ---- エディタ ----
 cask "cursor"
